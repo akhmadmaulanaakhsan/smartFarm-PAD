@@ -1,0 +1,166 @@
+body {
+    background-color: #ecf0e8;
+}
+
+.fixed-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+.box {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+
+h3 {
+    font-size: 40px; /* Sesuaikan dengan ukuran font yang Anda inginkan */
+    color: #416d14;
+    font-family: "League Spartan";
+    font-weight: bold;
+}
+
+.text-center h3 {
+    margin-bottom: 40px; /* Atur jarak atas sesuai keinginan */
+}
+
+input[type="email"] {
+    height: 52px; /* tinggi input */
+    /*width: 402px;*/
+    color: #416d14;
+    border-radius: 8px;
+    font-family: "League Spartan"; /* Atur font yang sesuai */
+    font-size: 17px; /* Atur ukuran font yang sesuai */
+}
+
+input[type="password"] {
+    height: 52px; /* tinggi input */
+    /*width: 402px;*/
+    border-radius: 8px;
+    font-family: "League Spartan"; /* Atur font yang sesuai */
+    font-size: 12px; /* Atur ukuran font yang sesuai */
+    color: #416d14;
+}
+
+input[type="email"]::placeholder {
+    color: #416d14;
+    font-size: 17px;
+}
+
+input[type="password"]::placeholder {
+    color: #416d14;
+    font-size: 17px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+    padding-right: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px; /* Atur ukuran font input sesuai kebutuhan */
+}
+
+/* Gaya teks untuk mode teks biasa */
+input[type="text"] {
+    font-family: "League Spartan"; /* Atur font yang sesuai */
+    font-size: 17px; /* Atur ukuran font yang sesuai */
+    color: #416d14;
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+
+.toggle-password {
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.iconemail {
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.email-email {
+    width: 20px;
+    height: 20px;
+}
+
+.eye-icon {
+    display: none; /* Mulai dengan menyembunyikan ikon mata terbuka */
+}
+
+.open-eye {
+    display: inline; /* Tampilkan ikon mata terbuka ketika dibutuhkan */
+    width: 20px;
+    height: 20px;
+}
+
+.closed-eye {
+    display: none; /* Sembunyikan ikon mata tertutup ketika dibutuhkan */
+    width: 20px;
+    height: 20px;
+}
+
+.btn {
+    width: 166px; /* Ganti dengan lebar yang diinginkan */
+    height: 54px; /* Ganti dengan tinggi yang diinginkan */
+    color: #ffffff;
+    background-color: #416d14;
+    border-radius: 50px;
+    font-size: 19px;
+}
+
+.text-center button.btn {
+    margin-top: 20px; /* Atur jarak atas */
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .fixed-image {
+        display: none;
+    }
+
+    .box {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-height: 670px) and (max-width: 768px) {
+    .box {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto;
+    }
+}
